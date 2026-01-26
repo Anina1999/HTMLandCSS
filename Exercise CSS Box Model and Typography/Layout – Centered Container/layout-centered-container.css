@@ -1,0 +1,27 @@
+html {
+    margin: 0;
+    border: 1px solid black;
+    padding-bottom: 1.5rem;
+}
+
+body {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    border: 1px solid green;
+}
+
+section{
+    margin: 1.5rem;
+    border: 1px solid blue;
+}
+
+.header, .main, .footer {
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 1.5rem;
+    padding: 20px;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+

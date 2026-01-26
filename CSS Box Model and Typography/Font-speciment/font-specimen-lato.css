@@ -1,0 +1,101 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 1em 0.2em;
+    text-indent: -7px;
+}
+
+h6 {
+    font-size: 11px;
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin: 0
+}
+
+p.first {
+    margin: -7px;
+    margin-bottom: 0.5em;
+    
+}
+
+p.second {
+    margin: -7px;
+    margin-bottom: 0.5em;
+    
+}
+
+p.third {
+    margin: -7px;
+}
+
+span {
+    display: block;
+}
+
+.square {
+    list-style-type: square;
+    margin-left: 10px;
+}
+
+.disc {
+    list-style-type: disc;
+}
+
+.circle {
+    list-style-type: circle;
+}
+
+.ol {
+    margin-left: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid rgb(190, 190, 190);
+    margin-bottom: 1.5em;
+}
+
+thead th {
+    width: 500px;
+    background-color: rgb(190, 190, 190);
+    text-align: left;
+    padding-left: 5px;
+}
+
+.odd {
+    background-color: rgb(236, 236, 236);
+}
+
+tr.odd td {
+    padding-left: 5px;
+    border-right: 1px solid rgb(190, 190, 190);
+    border-bottom: 1px solid rgb(190, 190, 190);
+}
+
+tr.even td {
+    padding-left: 5px;
+    border-right: 1px solid rgb(190, 190, 190);
+    border-bottom: 1px solid rgb(190, 190, 190);
+}
+
+blockquote {
+    border-left: 4px solid #ccc;
+    margin-left: 35px;
+    padding: 20px 0 0 30px;
+    font-style: italic;
+    min-height: 150px;
+}
+
+.second-quote {
+    margin-top: -5px;
+}

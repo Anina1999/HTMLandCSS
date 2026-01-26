@@ -1,0 +1,30 @@
+section {
+    border: 1px dashed black;
+    padding: 0 20px 20px 20px;
+}
+
+.margin, .border, .padding, .content {
+    padding: 0 -5px -5px -5px;
+}
+
+.margin {
+    background-color: rgb(48, 171, 171);
+    width: 30%;
+    position: absolute;
+    left: 35%;
+    bottom: 40%;
+}
+
+.border {
+    background-color: rgb(27, 179, 116);
+}
+
+.padding {
+    background-color: rgb(159, 45, 123);
+}
+
+.content {
+    background-color: rgb(220, 244, 3);
+    text-align: center;
+
+}

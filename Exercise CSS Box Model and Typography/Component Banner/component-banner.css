@@ -1,0 +1,16 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+header {
+    background-image: url('./screenshot.png');
+}
+
+header img {
+    max-width: 100%;  
+    max-height: 100%; 
+    object-fit: contain;
+}

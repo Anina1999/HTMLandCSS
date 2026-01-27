@@ -1,0 +1,23 @@
+p {
+    display: inline-block;
+    border: 1px solid rgb(220, 220, 220);
+    background-color: rgb(220, 220, 220);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+h4 {
+    margin-bottom: 0;
+}
+
+.orange {
+    background: rgb(252, 175, 33);
+}
+
+.yellow {
+    background: rgb(255, 255, 142);
+}
+
+.white {
+    background: white;
+}

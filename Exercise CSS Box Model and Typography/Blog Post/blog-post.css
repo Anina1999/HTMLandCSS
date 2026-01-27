@@ -1,0 +1,32 @@
+div {
+    border: 1px solid rgb(193, 193, 193);
+    width: 900px;
+    margin: 40px 0 40px 170px ;
+}
+
+h2, h3 {
+    padding-left: 45px;
+}
+
+.first-p {
+    font-size: 18px;
+    max-width: 74ch;
+}
+
+p {
+    max-width: 90ch;
+    padding-left: 40px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+time {
+    font-weight: 600;
+}
+
+span {
+    display: inline-block;
+    font-weight: 600;
+}

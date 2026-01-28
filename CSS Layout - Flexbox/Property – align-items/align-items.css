@@ -1,0 +1,45 @@
+.flex-item ul {
+    display: flex;
+    width: 450px;
+    border: 2px solid blue;
+    list-style: none;
+    padding: 1em;
+    height: 200px;
+}
+
+.flex-item li {
+    display: flex;
+    border: 2px solid black;
+    background-color: lightgray;
+    padding: 1em;
+}
+
+section:nth-of-type(1) .flex-item ul{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+section:nth-of-type(2) .flex-item ul{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+section:nth-of-type(3) .flex-item ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+section:nth-of-type(4) .flex-item ul{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+section:nth-of-type(5) .flex-item ul{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}

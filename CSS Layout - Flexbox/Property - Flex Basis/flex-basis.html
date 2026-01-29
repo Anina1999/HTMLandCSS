@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./flex-basis.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>flex-basis</h1>
+    </header>
+    <section>
+        <h2>flex-basis: 5em;</h2>
+        <div class="flex-container">
+            <div class="flex-item">
+                <ul class="flex-basis-5em">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>flex-basis: 5em; flex-shrink: 0; (max-width: 5em)</h2>
+        <div class="flex-container">
+            <div class="flex-item">
+                <ul class="flex-shrink-zero">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>flex-basis: 5em; flex-grow: 1; (min-width: 5em)</h2>
+        <div class="flex-container">
+            <div class="flex-item">
+                <ul class="flex-grow-one">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./flex-shrink.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>flex-shrink</h1>
+    </header>
+    <section>
+        <h2>flex-shrink: 1; (default)</h2>
+        <div class="flex-container">
+            <div class="flex-item">
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>flex-shrink: 0;</h2>
+        <div class="flex-container">
+            <div class="flex-item">
+                <ul class="flex-shrink-zero">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>flex-shrink, shrink 2nd child only</h2>
+        <div class="flex-container">
+            <div class="flex-item">
+                <ul class="flex-shrink-2nd-only">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

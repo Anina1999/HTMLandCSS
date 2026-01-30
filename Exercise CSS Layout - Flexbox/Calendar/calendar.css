@@ -1,0 +1,95 @@
+body {
+    background: lightgray;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    background-color: white;
+    border: 2px solid rgb(158, 158, 158);
+    display: flex;
+    width: 97%;
+    margin: 30px -20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 2px rgb(163, 163, 163);
+    flex-direction: row;
+}
+
+.first-container {
+    width: 85%;
+}
+
+.second-container {
+    width: 15%;
+    margin: 2px 2px 2px 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.workweek {
+    border: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+.work-days {
+    display: flex;
+    margin-left: 2px;
+}
+
+.work-days div {
+    border: 1px solid lightgray;
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.weekend {
+    border: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-left: 2px;
+}
+
+.weekend-days {
+    display: flex;
+}
+
+.weekend-days div {
+    width: 100%;
+    border: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 2px;
+}
+
+.weekend-days div:first-of-type {
+    margin-left: 2px;
+}
+
+.notes div{
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: stretch;
+}
+
+.notes div:first-of-type {
+    padding-top: 20px;
+    padding-bottom: 7.2px;
+    align-items: center;
+}
+
+.notes div:last-of-type {
+    padding-top: 20px;
+    padding-bottom: 6.5px;
+    align-items: center;
+}

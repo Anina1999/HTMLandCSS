@@ -1,0 +1,45 @@
+body {
+    background: rgb(205, 205, 205);
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    width: 55%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+}
+
+.article {
+    background: white;
+    padding: 3% 4%;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+p {
+    width: 95%;
+    margin-bottom: 4%;
+}
+
+h2 {
+    margin-top: 5px;
+}
+
+.article span {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+ol {
+    list-style-type: disc;
+    padding-left: 25px;
+    margin-bottom: 3.5%;
+}
+
+.article p:last-of-type {
+    width: 103%;
+}

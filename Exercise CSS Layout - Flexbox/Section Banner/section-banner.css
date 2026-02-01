@@ -1,0 +1,70 @@
+body {
+    background: #dedddd;
+}
+
+main {
+    margin-top: 3%;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #c6c6c6;
+    background: rgb(245, 244, 244);
+    width: 70%;
+    margin: auto;
+    padding: 3%;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin-bottom: 20px;
+}
+
+span {
+    font-weight: 600;
+    font-size: 20px;
+    opacity: 60%;
+}
+
+h2 {
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 80%;
+}
+
+p {
+    font-family: Helvetica, sans-serif;
+    opacity: 70%;
+    width: 106.4%;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+a {
+    text-decoration: none;
+    padding: 5px;
+}
+
+a:first-of-type {
+    border: 1px solid rgb(141, 42, 141);
+    background: rgb(141, 42, 141);
+    color: white;
+}
+
+a:last-of-type{
+    border: 1px solid lightgray;
+    background: lightgray;
+    color: rgb(106, 106, 106);
+}
+
+.article {
+    width: 70%;
+    font-size: 13px;
+}
+
+figure {
+    border: 1px solid rgb(198, 197, 197);
+    background: rgb(198, 197, 197);
+    width: 28%;
+    margin: 0 0 0 45px;
+}

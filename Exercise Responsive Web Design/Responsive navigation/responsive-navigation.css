@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 2%;
+    background: #e4e4e4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    margin: 1em;
+    margin-left: 45%;
+}
+
+header {
+    background: #f8f8f8;
+    width: 90%;
+    height: 10%;
+    align-items: center;
+    margin: 1% auto;
+    display: flex;
+    border: 2px solid rgb(227, 227, 227);
+    box-shadow: 0 0 6px 2px rgba(216, 216, 216, 0.678);
+}
+
+h2 {
+    margin: 1em;
+    justify-content: flex-start;
+}
+
+.nav-container {
+    width: 93%;
+    display: flex;
+}
+
+li {
+    list-style: none;
+    border: 1px solid rgb(228, 228, 228);
+    background: rgb(225, 225, 225);
+    border-radius: 3px;
+    margin: 0.5em;
+    padding: 3%;
+    flex-shrink: 0;
+    font-size: 14px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-btn {
+    display: none;
+    margin-left: auto;
+    margin-right: 1em;
+    padding: 0.8em 0.5em;
+    border: 1px solid #eaeaea;
+    background: #ddd;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.menu-btn::before {
+    content: attr(data-open);
+}
+
+.mobile-only {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    h2 {
+        display: inline-block;
+    }
+    nav {
+        margin-left: 45%;
+    }
+}
+
+@media (max-width: 800px) {
+    h2 {
+        display: inline-block;
+    }
+    nav {
+        margin-left: 20%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    nav {
+        width: 100%;
+        display: none;
+        margin-left: 0;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu-toggle:checked ~ nav {
+        display: block;
+    }
+
+    #menu-toggle:checked + .menu-btn::before {
+        content: attr(data-close);
+    }
+
+    header:has(#menu-toggle:checked) h2 {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    #menu-toggle:checked ~ nav .mobile-only {
+        display: block;
+    }
+
+    #category {
+        width: 55%;
+        margin-left: 7%;
+    }
+
+    #subcategory {
+        width: 50%;
+        margin-left: 12%;
+    }
+
+    #subcategory-inner {
+        width: 44%;
+        margin-left: 18%;
+    }
+
+    li {
+        margin-bottom: 0;
+        margin-top: 0.2em;
+    }
+
+    ul li {
+        width: 60%;
+    }
+}

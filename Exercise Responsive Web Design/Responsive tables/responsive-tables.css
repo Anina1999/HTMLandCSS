@@ -1,0 +1,154 @@
+@import 'reset.css';
+
+body {
+    background: rgb(234, 234, 234);
+    font-family: Helvetica, sans-serif;
+}
+
+.first-container, .second-container {
+    border: 1px solid rgb(172, 172, 172);
+    border-radius: 10px;    
+    margin: 3em;
+    background: white;
+    box-shadow: 0 0 10px 2px #cacaca;
+}
+
+.first-container {
+    margin-bottom: 0;
+}
+
+.second-container {
+    border-radius: 10px;   
+    margin-top: 1.5em;
+    overflow: hidden;
+}
+
+h2 {
+    padding: 0.8em;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+thead tr {
+    background: rgb(229, 229, 229);
+    border: 1px solid rgb(172, 172, 172);
+    font-weight: 600;
+}
+
+tbody tr {
+    border: 1px solid rgb(172, 172, 172);
+}
+
+
+
+td, th {
+    padding: 0.8em 1.2em; 
+}
+
+.first-container tr:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    table {
+        display: flex;
+        width: 100%;
+    }
+
+    thead {
+        width: 100%;
+        display: none;
+    }
+
+    tbody tr {
+        width: 100%;
+        display: inline-block;
+        border-top: 2px solid #656565;
+        border-top: 2px solid #656565;
+        background: white;
+        padding: 0.5em;
+    }
+
+    tbody td {
+        display: grid;
+        grid-template-columns: 160px 1fr;
+        column-gap: 3em;
+        padding: 0.5em;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        color: rgba(0, 0, 0, 0.7);
+    }
+
+    tbody td::before {
+        content: attr(data-title);
+        font-weight: 600;
+        padding-right: 1em;
+        white-space: nowrap;     
+        overflow: hidden;       
+        text-overflow: ellipsis; 
+        color: rgba(0, 0, 0, 1);
+    }
+
+    tbody td:last-child {
+        border-bottom: 0;
+    }
+    
+    tbody tr:last-of-type td{
+        border-bottom: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    table {
+        display: flex;
+        width: 100%;
+    }
+
+    thead {
+        width: 100%;
+        display: none;
+    }
+
+    tbody tr {
+        width: 100%;
+        display: inline-block;
+        border-top: 2px solid #656565;
+        border-top: 2px solid #656565;
+        background: white;
+        padding: 0.5em;
+    }
+
+    tbody td {
+        display: grid;
+        grid-template-columns: 90px 1fr;
+        column-gap: 0.3em;
+        padding: 0.5em;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        color: rgba(0, 0, 0, 0.7);
+    }
+
+    tbody td::before {
+        content: attr(data-title);
+        font-weight: 600;
+        padding-right: 1em;
+        white-space: nowrap;     
+        overflow: hidden;       
+        text-overflow: ellipsis; 
+        color: rgba(0, 0, 0, 1);
+    }
+
+    tbody td:last-child {
+        border-bottom: 0;
+    }
+    
+    tbody tr:last-of-type td{
+        border-bottom: 0;
+    }
+}

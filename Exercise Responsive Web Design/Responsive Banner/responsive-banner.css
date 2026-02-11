@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(234, 234, 234);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    background: white;
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 90%;
+    padding: 2em;
+    width: 80%;
+    margin: 3em auto;
+    min-height: 250px;
+    border-radius: 5px;
+}
+
+.text {
+    flex: 1 1 65%;
+}
+
+.img {
+    flex: 1 1 20%;
+    margin-left: 3em;
+}
+
+figure {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    background: rgb(227, 227, 227);
+    min-height: 100%;
+    border-radius: 5px;
+}
+
+p:first-of-type {
+    opacity: 60%;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+h2 {
+    margin-bottom: 0.5em;
+}
+
+p:last-of-type {
+    opacity: 70%;
+    margin-bottom: 1.5em;
+}
+
+.buttons {
+    width: 40%;
+    display: flex;
+}
+
+.buttons a {
+    flex-direction: row;
+    text-decoration: none;
+    padding: 0.5em 0.8em;
+    margin-right: 0.5em;
+    flex: 0 0 auto;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.buttons a:first-of-type {
+    border: 1px solid gray;
+    background: rgb(89, 11, 134);
+    color: white;
+    margin-right: 1em;
+}
+
+.buttons a:last-of-type {
+    border: 1px solid rgb(234, 234, 234);
+    background: rgb(234, 234, 234);
+    color: rgb(178, 178, 178);
+    
+}   

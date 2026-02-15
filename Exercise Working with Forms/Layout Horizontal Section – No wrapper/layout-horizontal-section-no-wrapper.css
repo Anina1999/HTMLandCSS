@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 14px/1.5 Arial, sans-serif;
+    border: 2px solid green
+}
+
+h4 {
+    margin-bottom: 1em;
+}
+
+section {
+    border: 2px solid blue;
+    padding-block: 2em;
+    padding-left: max(1em, calc((100vw - 950px) / 2));
+    padding-right: max(1em, calc((100vw - 950px) / 2));
+    margin: 1.5em;
+}
+
+@media (max-width:800px) {
+    section {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

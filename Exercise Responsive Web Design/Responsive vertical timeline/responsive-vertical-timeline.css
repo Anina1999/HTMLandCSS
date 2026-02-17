@@ -1,0 +1,323 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    border: 1px solid rgb(158, 157, 157);
+    width: 95%;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+    background: lightgray;
+    font: 14px/1.5 Arial, sans-serif;
+}
+
+h2 {
+    border: 1px solid rgb(222, 221, 221);
+    text-align: center;
+    margin: 1em auto 0 auto;
+    background: white;
+    border-radius: 0.2em;
+    padding: 0.5em;
+    font-size: 16px;
+    width: 81.5%;
+}
+
+.wrapper {
+    display: flex;
+    position: relative; /* reference point за timeline линия */
+    flex-direction: row;
+    padding: 2em;
+    gap: 2em;
+}
+
+.wrapper::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0; /* разтяга се спрямо съдържанието */
+    width: 2px;
+    background: rgb(104, 104, 104);
+    transform: translateX(-50%);
+}
+
+.left, .right {
+    width: 40%;
+}
+
+.left {
+    margin-left: auto;
+}
+
+.right {
+    margin-right: auto;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+}
+
+.middle span:first-child {
+    margin-top: 3em;
+    z-index: 1;
+}
+
+.middle span:nth-child(2) {
+    margin-top: 10em;
+    z-index: 1;
+}
+
+.middle span:nth-child(3) {
+    margin-top: 12.5em;
+    z-index: 1;
+}
+
+.middle span:nth-child(4) {
+    margin-top: 12.5em;
+    z-index: 1;
+}
+
+.middle span:nth-child(5) {
+    margin-top: 3.3em;
+    z-index: 1;
+}
+
+.middle span:nth-child(6) {
+    margin-top: 7.4em;
+    z-index: 1;
+}
+
+.middle span:nth-child(7) {
+    margin-top: 5.5em;
+    z-index: 1;
+}
+
+.green, .orange {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: inline-block;
+}
+
+.green { background: green; border: 1px solid white; }
+.orange { background: orange; border: 1px solid white; }
+
+.left article {
+    position: relative;
+    border: 1px solid rgb(199, 198, 198);
+    background: white;
+    border-radius: 0.3em;
+    padding: 2em;
+    text-align: end;
+    
+}
+
+.left p {
+    max-width: 60ch;
+    position: relative;
+    left: 2.3em;
+}
+
+.left article:nth-of-type(1) { margin: 13em 1em; }
+.left article:nth-of-type(2) { margin: 8em 1em 8em 1em; }
+.left article:nth-of-type(3) { margin: 2em 1em 1em 1em; }
+
+.left article .title-dot { justify-content: flex-end; }
+
+.right article {
+    position: relative;
+    border: 1px solid rgb(199, 198, 198);
+    background: white;
+    border-radius: 0.3em;
+    padding: 1em 1.5em;
+    text-align: start;
+}
+
+.right article:nth-of-type(1) { margin: 2em 1em; }
+.right article:nth-of-type(2) { margin: 17em 1em 7em 1em; }
+.right article:nth-of-type(3) { margin: 10.5em 1em; }
+.right article:nth-of-type(4) { margin: 11em 1em 0 1em; }
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+    .left p {
+    left: 0;
+}
+    .middle span:nth-child(3) {
+    margin-top: 14em;
+}
+    .middle span:nth-child(4) {
+    margin-top: 15.5em;
+}
+    .middle span:nth-child(5) {
+    margin-top: 2em;
+}
+    .middle span:nth-child(6) {
+    margin-top: 9em;
+}
+    .middle span:nth-child(7) {
+    margin-top: 4.5em;
+}
+}
+
+@media (max-width: 800px) {
+    h4 {
+        position: relative;
+        left: 0.8em;
+    }
+    .left article {
+        width: 100%;
+        padding: 1.5em;
+    }
+    .left p {
+    width: 110%;
+    position: relative;
+    left: -1em;
+}
+    .right h4 {
+        position: relative;
+        left: -0.5em;
+    }
+
+    .right article {
+        width: 100%;
+        margin-right: 0;
+    }
+    .right p {
+    width: 110%;
+    position: relative;
+    left: -0.5em;
+}
+    .middle span:nth-child(1) {
+    margin-top: 3em;
+}
+
+    .middle span:nth-child(2) {
+    margin-top: 9em;
+}
+
+    .middle span:nth-child(3) {
+    margin-top: 18em;
+}
+
+    .middle span:nth-child(4) {
+    margin-top: 15.3em;
+}
+
+    .middle span:nth-child(5) {
+    margin-top: 5.5em;
+}
+
+.middle span:nth-child(6) {
+    margin-top: 6.2em;
+}
+    .middle span:nth-child(7) {
+    margin-top: 7.2em;
+}
+}
+
+@media (max-width: 600px) {
+
+    h2 {
+        width: 90%;
+        position: relative;
+        
+    }
+
+    h4 {
+        position: relative;
+        left: 0;
+    }
+
+    .right h4 {
+        position: relative;
+        left: 0.5em;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: 1em;
+    }
+
+    .wrapper::before {
+    content: "";
+    position: absolute;
+    left: 9%;
+    top: 0;
+    bottom: 0; /* разтяга се спрямо съдържанието */
+    width: 2px;
+    background: rgb(104, 104, 104);
+    transform: translateX(-50%);
+}
+
+    article p {
+        padding: 1em 2em 1em 1em;
+    }
+
+    .middle {
+       display: none;
+    }
+
+    /* правим article-ите директни flex деца */
+    .left,
+    .right {
+        display: contents;
+    }
+
+    /* махаме всички големи марджини */
+    .left article,
+    .right article {
+        width: 92%;
+        position: relative;
+        left: 3em;
+        text-align: left;
+    }
+
+    /* редът който искаш */
+    .right article:nth-of-type(1) { margin: 1em; order: 1; }
+    .left  article:nth-of-type(1) { margin: 1em; order: 2; }
+    .right article:nth-of-type(2) { margin: 1em; order: 3; }
+    .left  article:nth-of-type(2) { margin: 1em; order: 4; }
+    .right article:nth-of-type(3) { margin: 1em; order: 5; }
+    .left  article:nth-of-type(3) { margin: 1em; order: 6; }
+    .right article:nth-of-type(4) { margin: 1em; order: 7; }
+
+    .right article h4 span{
+        height: 2em;
+        width: 2em;
+        border-radius: 1em;
+        background-color: orange;
+        display: inline-block;
+    }
+
+    .left article h4 span {
+        height: 2em;
+        width: 2em;
+        border-radius: 1em;
+        background-color: greenyellow;
+        display: inline-block;
+    }
+
+    .right article h4 span {border: 1px solid white; position: relative; left:-11.2em; bottom: -0.5em;}
+    .left article h4 span {border: 1px solid white; position: relative; left:-12.7em; bottom: -0.5em;}
+    .left article:nth-child(2) h4 span {border: 1px solid white; position: relative; left:-10.9em; bottom: -0.5em;}
+    .right article:nth-child(3) h4 span {border: 1px solid white; position: relative; left:-8em; bottom: -0.5em;}
+    .left article:nth-child(3) h4 span {border: 1px solid white; position: relative; left:-7.5em; bottom: -0.5em;}
+    .right article:nth-child(4) h4 span {border: 1px solid white; position: relative; left:-8em; bottom: -0.5em;}
+}
+
+@media (max-width: 400px) {
+    .wrapper .right article, .wrapper .left article {
+        margin: 0;
+        padding: 1em;
+    }
+
+    .right article h4 span, .left article h4 span {
+        margin-left: 0.4em;
+    }
+}

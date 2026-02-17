@@ -1,0 +1,548 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    padding: 0 2em;
+    flex-wrap: wrap;
+}
+
+.wrapper article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2em 0;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    background-color: #ebeaea;
+    flex: 1 1 calc(33.333% - 1em);
+    height: auto;
+}
+
+.img-wrapper {
+    padding: 0.5em;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    border: 1px solid lightgray;
+    border-radius: 0.3em;
+}
+
+.img-wrapper p {
+    border-radius: 0.3em;
+    color: rgb(238, 233, 224);
+    padding: 0.3em 0.5em;
+    position: absolute;
+    top: 1.5em;
+    right: 1.5em;
+}
+
+.img-wrapper .green {
+    border: 1px solid rgba(31, 165, 134, 0.742);
+    background-color: rgba(31, 165, 134, 0.742);
+}
+
+.img-wrapper .purple {
+    border: 1px solid rgba(134, 25, 153, 0.767);
+    background-color: rgba(134, 25, 153, 0.767);
+}
+
+.img-wrapper .orange {
+    border: 1px solid rgba(255, 166, 0, 0.763);
+    background-color: rgba(255, 166, 0, 0.763);
+    color: white;
+}
+
+.article {
+    position: relative;
+}
+
+.heading {
+    width: 97%;
+    max-height: 20vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    left: 0.3em;
+    top: -1.8em;
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 2.5em;
+    width: 55%;
+    position: absolute;
+    left: 7.5em;
+    bottom: 0;
+    gap: 0.5em;
+    border-radius: 0.3em;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    padding: 1em;
+}
+
+.author .img img {
+    width: 4em;
+    height: 4em;
+    border: 4px solid white;
+    border-radius: 5em;
+    position: absolute;
+    top: -1em;
+    left: 10.7em;
+}
+
+.icon {
+    padding-left: 0.5em;
+    position: absolute;
+    left: -0em;
+}
+
+.name {
+    position: absolute;
+    left: 2em;
+}
+
+.course {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 89%;
+    position: absolute;
+    left: 0.8em;
+    bottom: -5.5em;
+    margin: 0.5em;
+    border-radius: 0.3em;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 0.5em 0 0.5em 0.5em;
+    background: white;
+    text-align: start;
+
+}
+
+.course p {
+    font-size: 14px;
+    padding-top: 0.5em;
+    margin: 0.3em;
+    border-top: 1px solid gray;
+    width: 98%;
+}
+
+h3 {
+    position: relative;
+    left: -1.8em;
+    bottom: -0.2em;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em;
+    margin-top: 4em;
+}
+
+.groups {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.2em;
+}
+
+.groups p {
+    font-weight: 600;
+}
+
+.groups a {
+    font-size: 14px;
+    text-decoration: none;
+    color: rgba(25, 154, 124, 0.781);
+}
+
+.schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em 0;
+    margin: 0.5em 0;
+}
+
+.first-div,
+.second-div,
+.last {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 0.4em;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+    background-color: rgb(245, 245, 245);
+    color: rgb(118, 118, 118);
+}
+
+.last {
+    margin-top: 0.8em;
+    padding: 1.2em 2em;
+    color: rgba(25, 154, 124, 0.781);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.last span:first-child {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.first-div p:first-child,
+.second-div p:first-child {
+    margin-bottom: 0.3em;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 1em;
+}
+
+@media (max-width: 800px) {
+    .wrapper article {
+        flex: 1 1 calc(50% - 1em);
+    }
+
+    .wrapper article:nth-of-type(3) .course {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 97%;
+        position: absolute;
+        left: 0.5em;
+        bottom: -4.5em;
+        margin: 0.5em;
+        border-radius: 0.3em;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        padding: 0.5em 0 0.5em 0.5em;
+        background: white;
+        text-align: start;
+
+    }
+
+    h3 {
+        padding: 0.5em 0 0.2em 0.8em
+    }
+
+    .wrapper article:nth-of-type(3) h3 {
+        left: -10.8em;
+        bottom: -0.2em;
+        padding-left: 0;
+    }
+
+    .wrapper article:nth-of-type(3) .author {
+        padding: 1em;
+        width: 30%;
+        left: 70%;
+        bottom: 0;
+        gap: 0.5em;
+        border-radius: 0.3em;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+        padding: 1em;
+    }
+
+    .wrapper article:nth-of-type(3) .author .img img {
+        width: 4em;
+        height: 4em;
+        border: 4px solid white;
+        border-radius: 5em;
+        position: absolute;
+        top: -1em;
+        left: 10.7em;
+    }
+
+    article.article:nth-child(3)>div:nth-child(3)>div:nth-child(3)>span:nth-child(1) {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* wrapper → vertical layout */
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    /* всички article-та заемат пълната ширина */
+    .wrapper article {
+        flex: 1 1 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        position: relative; /* важен за absolute вътре */
+    }
+
+    /* всички course */
+    .wrapper article .course {
+        width: 95%;
+        position: absolute;
+        left: 0.5em;
+        bottom: -6.5em;
+        margin: 0.5em;
+        border-radius: 0.3em;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        padding: 0.5em 0 0.5em 0.5em;
+        background: white;
+        text-align: start;
+    }
+
+    /* заглавие */
+    .wrapper article h3 {
+        padding: 0.5em 0 0.2em 0.8em;
+        position: relative;
+        left: -5.8em;
+        bottom: -0.2em;
+        padding-left: 0;
+    }
+
+    /* author box */
+    .wrapper article .author {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        height: 2.5em;
+        width: 40%;
+        position: absolute;
+        left: 58%;
+        bottom: 0;
+        gap: 0.5em;
+        border-radius: 0.3em;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+        padding: 1em;
+    }
+
+    /* снимката на автора */
+    .wrapper article .author .img img {
+        width: 4em;
+        height: 4em;
+        border: 4px solid white;
+        border-radius: 5em;
+        position: absolute;
+        top: -1em;
+        left: 10.7em;
+    }
+
+    .wrapper article:nth-of-type(3) .course {
+        width: 95%;
+        position: absolute;
+        left: 0.5em;
+        bottom: -6.5em;
+        margin: 0.5em;
+        border-radius: 0.3em;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        padding: 0.5em 0 0.5em 0.5em;
+        background: white;
+        text-align: start;
+
+    }
+
+    h3 {
+        padding: 0.5em 0 0.2em 0.8em
+    }
+
+    .wrapper article:nth-of-type(3) h3 {
+        padding: 0.5em 0 0.2em 0.8em;
+        position: relative;
+        left: -5.8em;
+        bottom: -0.2em;
+        padding-left: 0;
+    }
+
+    .wrapper article:nth-of-type(3) .author {
+         display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        height: 2.5em;
+        width: 40%;
+        position: absolute;
+        left: 58%;
+        bottom: 0;
+        gap: 0.5em;
+        border-radius: 0.3em;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+        padding: 1em;
+    }
+
+    .wrapper article:nth-of-type(3) .author .img img {
+        width: 4em;
+        height: 4em;
+        border: 4px solid white;
+        border-radius: 5em;
+        position: absolute;
+        top: -1em;
+        left: 10.7em;
+    }
+}
+
+@media (max-width: 400px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 0.1em; 
+        padding: 0 0.5em;
+    }
+
+    .wrapper article {
+        flex: 1 1 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.3em;
+        position: relative;
+    }
+
+    .wrapper article .course {
+        width: 92%;
+        position: absolute;
+        left: 0.5em;
+        bottom: -6em;
+        margin: 0.3em;
+        border-radius: 0.3em;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        padding: 0.4em 0 0.4em 0.5em;
+        background: white;
+        text-align: start;
+    }
+
+    /* заглавие */
+    .wrapper article h3 {
+        padding: 0.4em 0 0.2em 0.5em;
+        position: relative;
+        left: -2.3em;
+        bottom: -0.2em;
+    }
+
+    /* author box */
+    .wrapper article .author {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        height: 2.3em;
+        width: 50%;
+        position: absolute;
+        left: 69%;
+        bottom: 0;
+        gap: 0.4em;
+        border-radius: 0.3em;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+        padding: 0.8em;
+        transform: translateX(-50%);
+    }
+
+    /* снимката на автора */
+    .wrapper article .author .img img {
+        width: 3.5em;
+        height: 3.5em;
+        border: 3px solid white;
+        border-radius: 5em;
+        position: absolute;
+        top: -0.8em;
+        left: 10.5em;
+    }
+
+    .wrapper article:nth-of-type(3) .course {
+        width: 92%;
+        position: absolute;
+        left: 0.5em;
+        bottom: -6em;
+        margin: 0.3em;
+        border-radius: 0.3em;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        padding: 0.4em 0 0.4em 0.5em;
+        background: white;
+        text-align: start;
+
+    }
+
+    h3 {
+        padding: 0.5em 0 0.2em 0.8em
+    }
+
+    .wrapper article:nth-of-type(3) h3 {
+        padding: 0.4em 0 0.2em 0.5em;
+        position: relative;
+        left: -2.3em;
+        bottom: -0.2em;
+    }
+
+    .wrapper article:nth-of-type(3) .author {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        height: 2.3em;
+        width: 50%;
+        position: absolute;
+        left: 69%;
+        bottom: 0;
+        gap: 0.4em;
+        border-radius: 0.3em;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+        padding: 0.8em;
+        transform: translateX(-50%);
+    }
+
+    .wrapper article:nth-of-type(3) .author .img img {
+        width: 3.5em;
+        height: 3.5em;
+        border: 3px solid white;
+        border-radius: 5em;
+        position: absolute;
+        top: -0.8em;
+        left: 10.5em;
+    }
+}

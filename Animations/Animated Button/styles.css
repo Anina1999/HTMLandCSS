@@ -1,0 +1,22 @@
+.card {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.8);
+    transition: box-shadow 0.3s, opacity 0.3, font-size 0.3s, width 0.3s, transform 0.3;
+    margin: 40px auto;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.card:hover {
+    box-shadow: 0 12px 32px rgba(0,0,0,0.2);
+    color:aquamarine;
+    font-size: 18px;
+    width: 350px;
+    transform: translateY(-10px) scale(1.05);
+    opacity: 1;
+}

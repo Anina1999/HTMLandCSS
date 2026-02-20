@@ -1,0 +1,18 @@
+body {
+    padding: 20em 15em;
+}
+
+.fancy-btn {
+    padding: 12px 32px;
+    background: rgb(79, 150, 189);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.5s, transform 0.2s;
+}
+
+.fancy-btn:hover {
+    background: blue;
+    transform: translateY(-3px) scale(1.10);
+}
